@@ -4,33 +4,43 @@
     <meta charset="utf-8">
     <title>Student's Personal Site</title>
     <link rel="stylesheet" href="c:\css\styles.css">
+    <style>
+      .zoom {
+        transition: transform .2s;
+      }
+
+      .zoom:hover {
+        transform: scale(1.5);
+        margin-left: 25%;
+      }
+    </style>
   </head>
 
-  <body>
-    <table cellspacing="20">
+  <body bgcolor="#f0ffff">
+    <table cellspacing="20" bgcolor="#f0f8ff">
       <tr>
-        <td><img src="images/student.png" alt="student profile picture"></td>
-        <td><h1>FirstName LastName</h1>
+        <td><img src="./man.jpg" alt="student profile picture" width="150" height="150"></td>
+        <td><h1>Milan K.</h1>
         <p><em>Studying in <strong><a href="https://montreal.cegepgim.ca/">CegepGIM</a></strong>.</em></p>
-        <p>I am an Mobile and Web Developer. I ❤️ coffee and sports.</p></td>
+        <p style="border: coral 2px dotted">I am an Mobile and Web Developer. I ❤️ coffee and sports.</p></td>
       </tr>
     </table>
     <hr>
     <h3>Books and Studying</h3>
     <ul>
-      <li>The Complete Mobile Development Bootcamp</li>
-      <li>The Complete Web Development Bootcamp</li>
+      <li class="zoom">The Complete Mobile Development Bootcamp</li>
+      <li class="zoom">The Complete Web Development Bootcamp</li>
     </ul>
     <hr>
     <h3>Work Experience</h3>
-    <table cellspacing="10">
+    <table cellspacing="5" border="2" cellpadding="10" width="40%" class="zoom">
       <thead>
-        <tr>
+        <tr bgcolor="#a52a2a" style="border-radius: 25px">
           <th>Dates</th>
           <th>Work</th>
         </tr>
       </thead>
-      <tbody>
+      <tbody align="center">
         <tr>
           <td>2009-2010</td>
           <td>Student at ...</td>
@@ -47,7 +57,7 @@
     </table>
     <hr>
     <h3>Skills</h3>
-    <table cellspacing="10">
+    <table cellspacing="10" border="2" style="box-shadow: 5px 10px 8px 10px #888888;" class="zoom">
       <tr>
         <td>Android Development</td>
         <td>⭐️⭐️⭐️⭐️⭐️</td>
@@ -61,7 +71,9 @@
         <td>⭐️⭐️</td>
       </tr>
     </table>
+    <br><br><br>
     <hr>
+
     <a href="hobbies.html">My Hobbies</a>
     <a href="contact-me.html">Contact Me</a>
   </body>
